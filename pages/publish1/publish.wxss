@@ -1,0 +1,92 @@
+.mypublish{margin: 20rpx auto; border-bottom: 1px solid grey;text-align: center;margin-left: 20rpx;margin-right: 20rpx;padding-bottom: 20rpx;}
+.publish-content{margin: 0 20rpx; z-index: 0;}
+.content{width: 70%;height: 140rpx;}
+.content-introduction{margin-top: 20rpx;display: flex;flex-flow:row nowrap;}
+.content textarea{height: 120rpx;width:494rpx; margin-left: 10rpx;}
+.content-detail{margin-top: 20rpx;display: flex;flex-flow:row nowrap;}
+.contentdetail textarea{height: 120rpx;width:494rpx;overflow: hidden;margin-left: 10rpx;}
+.eEffective-time{margin-top: 20rpx;}
+.location{margin-top: 20rpx;display: flex;flex-flow: row nowrap;}
+.location-content{border: 1px solid grey;height: 200rpx;width:494rpx;margin-left: 10rpx;}
+.contact{margin-top: 20rpx;display: flex;flex-flow: row nowrap;}
+.contact input{border: 1px solid gray;margin-bottom: 20rpx;margin-left: 10rpx;}
+.btn1{
+  width: 90%;
+  /* height: 60rpx; */
+  margin-top: 20rpx;
+  background-color:orange;
+  color:white;
+  border-radius: 20rpx;
+  /* border-radius: 0rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+page{
+  background: #f3f7f7;
+  font-size:smaller;
+}
+.select_box1{
+  background: #fff;
+  width: 30%;
+  display: inline-block;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  /* margin: 30rpx auto; */
+  position: relative;
+}
+.select_box2{
+  background: #fff;
+  width: 30%;
+  display: inline-block;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  /* margin: 30rpx auto; */
+  position: relative;
+}
+.select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select_text{
+  font-size: 30rpx;
+  flex: 1;
+}
+.select_img{
+  width: 20rpx;
+  height: 20rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select_img_rotate{
+  transform:rotate(180deg); 
+}
+.option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border:1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  z-index: 9999;
+  overflow-y:auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  opacity: 1;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}

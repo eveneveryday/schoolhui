@@ -1,0 +1,53 @@
+<view class="mypublish">我的发布</view>
+<view class='publish-content'>
+  <view class='title'><text style='color:red;font-size:40rpx;'>*</text><text>主题分类</text>
+    <view class='select_box1'>
+      <view class='select' catchtap='selectTap1'>
+          <text class='select_text'>{{selectData1[index1]}}</text>
+          <image class='select_img {{show1&&"select_img_rotate"}}'   src='../index/icon/jiantou.jpg' ></image>         
+      </view>
+      <view class='option_box' style='height:{{show1?(selectData1.length>5?300:selectData1.length*60):0}}rpx;'>
+        <text class='option' style='{{index1==selectData1.length-1&&"border:0;"}}' wx:for='{{selectData1}}' wx:key='this' data-index='{{index}}' catchtap='optionTap1'>{{item}}</text>
+      </view>
+    </view>
+    <text style='color:grey;'>—</text>
+    <view class='select_box2'>
+      <view class='select' catchtap='selectTap2'>
+        <text class='select_text'>{{selectData2[index2]}}</text>
+        <image class='select_img {{show2&&"select_img_rotate"}}' src='../index/icon/jiantou.jpg' ></image>         
+      </view>
+    <view class='option_box' style='height:{{show2?(selectData2.length>5?300:selectData2.length*60):0}}rpx;'>
+    <text class='option' style='{{index2==selectData2.length-1&&"border:0;"}}' wx:for='{{selectData2}}' wx:key='this' data-index='{{index}}' catchtap='optionTap2'>{{item}}</text>
+    </view>
+</view>
+</view>
+<view class='content-introduction'>
+<view class='title-content'><text style='color:red;font-size:40rpx;'>*</text><text>内容简介</text></view>
+<view class='content'><textarea placeholder='请输入内容简介，不超过40字。' maxlength='40' style='border:1px solid grey;' ></textarea></view></view>
+<view class='content-detail'>
+<view class='title-content'><text style='color:red;font-size:40rpx;'>*</text><text>详细简介</text></view>
+<view class='contentdetail'><textarea placeholder='请输入内容详细简介，不超过500字。' maxlength='500' style='border:1px solid grey;' ></textarea></view></view>
+<view class='eEffective-time'>
+<view class='title-content'><text style='color:red;font-size:40rpx;'>*</text><text>有效时间</text><text class='my_flexR ' bindtap='pickerShow' style='font-size:smaller;'>({{startTime}}-{{endTime}})</text>
+</view>
+<!-- <view hidden='{{pickerShow}}'> -->
+<timePicker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime"
+  config="{{pickerConfig}}"></timePicker>
+    <!-- <DateTimePicker id="DateTimePicker1" openflag="{{openflag}}" timevalue="{{value1}}" years="{{years}}" months="{{months}}" days="{{days}}" hours="{{hours}}" minutes="{{minutes}}" bind:canslebtn="canslebtn1" bind:closebtn="closebtn" bind:bindChangeEvent="bindChange1">
+   </DateTimePicker>
+    <DateTimePicker id="DateTimePicker2" openflag="{{openflag}}" timevalue="{{value2}}" years="{{years}}" months="{{months}}" days="{{days}}" hours="{{hours}}" minutes="{{minutes}}" bind:canslebtn="canslebtn2" bind:closebtn="closebtn" bind:bindChangeEvent="bindChange2"> -->
+    <!-- </DateTimePicker> -->
+<!-- </view> -->
+</view>
+<view class='location'>
+<view class='title-content'><text style='color:red;font-size:40rpx;'>*</text><text>任务地点</text></view>
+<view class='location-content'>地图定位</view>
+</view>
+<view class='contact'>
+<view class='title-content'><text style='color:red;font-size:40rpx;'>*</text><text>联系方式</text></view>
+<view class='phonenum'><input type='text' placeholder='请输入手机号'></input><input type='text' placeholder='请输入微信号'></input></view>
+</view>
+<button class='btn1'>
+  <view>发布</view>
+</button>
+</view>

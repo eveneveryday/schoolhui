@@ -1,0 +1,64 @@
+<view class='my-title'>
+  <view class="mine">我的</view>
+  <view class='setting'>
+    <image src='../index/icon/setting.png' bindtap='goSetting'></image>
+    <image src='../index/icon/message.png'></image>
+  </view>
+</view>
+<view class='person-message'>
+    <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      
+    </block>
+  </view>
+    <view class='person'>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text style='margin-left:20rpx;'>活跃度</text>      
+      <view class='school'><text>西安电子科技大学</text> </view>
+    </view>
+  </view>
+  <view class='mytask'>
+    <view class='tasktitle'>我的任务</view>
+    <view class='task'>
+      <view>
+      <text>收藏夹</text>
+      <image src='../index/icon/mylike.png'></image>
+      </view>
+      <view>
+      <text>进行中</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+      <view>
+      <text>已完成</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+      <view>
+      <text>已取消</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='mypublish'>
+    <view class='tasktitle'>我的发布</view>
+    <view class='task'>
+      <view>
+      <text>草稿箱</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+      <view>
+      <text>发布中</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+      <view>
+      <text>已完成</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+      <view>
+      <text>已取消</text>
+      <image src='../index/icon/file.png'></image>
+      </view>
+    </view>
+  </view>

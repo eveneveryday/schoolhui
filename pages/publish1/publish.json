@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "timePicker": "../../utils/timePicker/timePicker"
+  }
+}

@@ -1,0 +1,60 @@
+<view class="container">
+  <view class="header_wrap">
+    <view class="header">
+      <!-- <icon class="iconfanhui1 iconfont" ></icon> -->
+      <span>设置</span>
+    </view>
+  </view>
+  <view class="list_wrap">
+    <view class="lists">
+      <view class="photo">
+        <view class="tphoto" bindgetuserinfo="getUserInfo">头像</view>
+        <view class="image">
+          <image class="touxiang getinfo"   src="{{userInfo.avatarUrl}}"  mode="cover"></image>
+          <icon class="iconfanhui2 iconfont fanhui2"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="lists">
+      <view class="photo">
+        <view class="tphoto">昵称</view>
+        <view class="image">
+          <view class="getinfo">{{userInfo.nickName}}</view>
+          <icon class="iconfanhui2 iconfont fanhui2"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="lists">
+      <view class="photo">
+        <view class="tphoto">出生日期</view>
+        <view class="image">
+          <view class="getinfo">xxxxx{{user.birth}}</view>
+          <icon class="iconfanhui2 iconfont fanhui2 hidden"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="lists">
+      <view class="photo">
+        <view class="tphoto">性别</view>
+        <view class="image">
+          <view class="getinfo">xxxxx{{user.sex}}</view>
+          <icon class="iconfanhui2 iconfont fanhui2 hidden"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="lists">
+      <view class="photo">
+        <view class="tphoto">联系方式</view>
+        <view class="image">
+          <view class="getinfo">xxxxx{{user.phone}}</view>
+          <icon class="iconfanhui2 iconfont fanhui2"></icon>
+        </view>
+      </view>
+    </view> 
+    
+  </view>
+  <view class="list">
+      <a class="exit">退出登陆</a>    
+  </view>
+</view>
+
